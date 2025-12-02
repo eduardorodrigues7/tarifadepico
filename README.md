@@ -25,7 +25,7 @@ Projeto acadêmico desenvolvido por **Igor Cecim** e **Eduardo Rodrigues** no 2�
 
 A tarifa de pico (Time of Use – TOU) é um instrumento de controle de demanda no setor elétrico, criado para **desestimular o consumo elevado em horários críticos**. Essa estratégia reduz sobrecarga na rede e custos operacionais, ao incentivar o deslocamento do consumo para horários fora do pico.
 
-Neste projeto, foi construída uma modelagem matemática para **otimizar o preço da tarifa de pico**, maximizando o lucro da concessionária, e validando a coerência do modelo com dados reais do **Operador Nacional do Sistema Elétrico (ONS)**. :contentReference[oaicite:1]{index=1}
+Neste projeto, foi construída uma modelagem matemática para **otimizar o preço da tarifa de pico**, maximizando o lucro da concessionária, e validando a coerência do modelo com dados reais do **Operador Nacional do Sistema Elétrico (ONS)**. 
 
 ---
 
@@ -35,7 +35,7 @@ Neste projeto, foi construída uma modelagem matemática para **otimizar o preç
 - Determinar o **preço ótimo** que maximiza o lucro.
 - Comparar diferentes modelos de demanda.
 - Validar a solução com dados reais do ONS (Curva de Carga Horária 2024).
-- Implementar um sistema web full stack para automatizar o cálculo do preço ótimo. :contentReference[oaicite:2]{index=2}
+- Implementar um sistema web full stack para automatizar o cálculo do preço ótimo. 
 
 ---
 
@@ -43,8 +43,7 @@ Neste projeto, foi construída uma modelagem matemática para **otimizar o preç
 
 O aumento do consumo nos horários de pico exige mecanismos de gestão eficientes. Estudos sobre **elasticidade da demanda** e **tarifação dinâmica** mostram que a demanda é influenciada diretamente pelo preço.
 
-Dessa forma, foi escolhido o problema de otimização da tarifa de pico usando ferramentas de cálculo (funções, derivadas e maximização de lucro), respeitando a operação do sistema elétrico. :contentReference[oaicite:3]{index=3}
-
+Dessa forma, foi escolhido o problema de otimização da tarifa de pico usando ferramentas de cálculo (funções, derivadas e maximização de lucro), respeitando a operação do sistema elétrico. 
 ---
 
 ## Persona e Contexto
@@ -54,7 +53,7 @@ A persona definida foi:
 **Maria Silva** — Diretora de planejamento da concessionária fictícia *Amazônia Luz Distribuidora*.
 
 - **Dor principal:** sobrecarga do sistema às **19h**, horário real de pico no Brasil.
-- **Objetivo:** definir uma tarifa que reduza a demanda no pico sem prejudicar o lucro da empresa. :contentReference[oaicite:4]{index=4}
+- **Objetivo:** definir uma tarifa que reduza a demanda no pico sem prejudicar o lucro da empresa. 
 
 ---
 
@@ -71,7 +70,7 @@ A demanda depende do preço:
 - **Linear**
 - **Exponencial**
 - **Potência**
-- **Logarítmico** :contentReference[oaicite:5]{index=5}
+- **Logarítmico** 
 
 ### Função lucro
 Com:
@@ -89,7 +88,7 @@ O preço ótimo é obtido por:
 \frac{dL}{dp} = 0
 \]
 
-A partir dessa condição, o sistema calcula automaticamente o **preço ótimo** para cada modelo de demanda. :contentReference[oaicite:6]{index=6}
+A partir dessa condição, o sistema calcula automaticamente o **preço ótimo** para cada modelo de demanda. 
 
 ---
 
@@ -105,7 +104,7 @@ Os dados foram coletados da base:
 - **Demanda máxima:** 87.569,90 MW às **19h**
 - **Período de pico identificado:** **18h–21h**
 
-Esses dados calibraram a função demanda e garantiram validação empírica do modelo. :contentReference[oaicite:7]{index=7}
+Esses dados calibraram a função demanda e garantiram validação empírica do modelo.
 
 ---
 
@@ -122,7 +121,7 @@ Esses dados calibraram a função demanda e garantiram validação empírica do 
 - FastAPI (Python)
 
 **Otimização simbólica**
-- SymPy :contentReference[oaicite:8]{index=8}
+- SymPy
 
 ### Fluxo do sistema
 1. O usuário insere parâmetros de demanda e custos no frontend.  
@@ -137,7 +136,7 @@ A solução determinou uma tarifa de pico ótima que:
 
 - **maximiza o lucro da concessionária**,  
 - **não agrava a sobrecarga da rede**,  
-- e apresenta coerência com a curva real de consumo validada pelo ONS. :contentReference[oaicite:9]{index=9}
+- e apresenta coerência com a curva real de consumo validada pelo ONS.
 
 ---
 
@@ -145,7 +144,7 @@ A solução determinou uma tarifa de pico ótima que:
 
 - Considera comportamento linear/simplificado de demanda.  
 - Assume custo marginal constante.  
-- Não inclui fatores externos (clima, economia, comportamento social), que podem alterar a demanda real. :contentReference[oaicite:10]{index=10}
+- Não inclui fatores externos (clima, economia, comportamento social), que podem alterar a demanda real.
 
 ---
 
@@ -156,7 +155,7 @@ Sugestões de evolução do projeto:
 - Aplicação de modelos exponenciais mais robustos.  
 - Inclusão explícita de **elasticidade-preço**.  
 - Persistência em banco de dados.  
-- Dashboards gráficos para visualização de lucro e demanda. :contentReference[oaicite:11]{index=11}
+- Dashboards gráficos para visualização de lucro e demanda.
 
 ---
 
@@ -164,7 +163,7 @@ Sugestões de evolução do projeto:
 
 O projeto alcançou os objetivos propostos ao integrar:
 
-**modelagem matemática + validação real com dados do ONS + implementação full stack**, oferecendo uma ferramenta prática para apoiar decisões tarifárias em horários de pico. :contentReference[oaicite:12]{index=12}
+**modelagem matemática + validação real com dados do ONS + implementação full stack**, oferecendo uma ferramenta prática para apoiar decisões tarifárias em horários de pico. 
 
 ---
 
